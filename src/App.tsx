@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
+
+import Header from './components/Header/Header';
 
 import './styles.scss';
 
 function App() {
   return (
     <>
-      <h1>Vitl store</h1>
+        <Header />
     </>
   );
 }
