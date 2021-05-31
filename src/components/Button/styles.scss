@@ -18,6 +18,7 @@
   &:disabled {
     cursor: default;
     pointer-events: none;
+    background-color: #efefef;
   }
 
   &:hover {
