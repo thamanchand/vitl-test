@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 
 import "./styles.scss";
+import ProductImage from "../ProductItem/vitl-vitamin-D.png";
 
 type Props = {
     item: {
@@ -12,8 +13,12 @@ const CartItem = ({ item: { name, price }}: Props) => {
     return (
         <div className="cartItem">
             <div className="itemDetails">
+                <div>
+                    <img src={ProductImage} className="cartImage" alt="product_image" />
+                </div>
                 <span className="name">{name}</span>
-                <span className="price">{price} x price</span>
+                <span className="price">£{price}</span>
+                <span className="removeLabel">X</span>
             </div>
         </div>
     );
