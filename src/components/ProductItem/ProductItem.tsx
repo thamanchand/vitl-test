@@ -32,7 +32,10 @@ const ProductItem = ({ item, handleAddProduct }: Props) => {
                             onClick={() => handleAddProduct(item)}
                             disabled={isProductExist}
                         >
-                            Add to cart
+                            {isProductExist
+                                ? <span>Added to cart </span>
+                                : <span>Add to cart</span>
+                            }
                         </Button>
                     </div>
                 </div>
