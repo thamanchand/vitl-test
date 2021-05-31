@@ -1,9 +1,9 @@
 import { createContext } from 'react';
 
-import { Product } from './types';
+import { Product} from './types';
 
 export type VitlProductContextType = {
-    onProductRemove: (product: Product) => void;
+    onProductRemove: (name: string) => void;
     onProductAdd: (product: Product) => void;
     products: Product[];
     isLoading: boolean;
