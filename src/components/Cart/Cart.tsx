@@ -18,7 +18,6 @@ const cartItems = [
     }
 ]
 const Cart = () => {
-    // checkout logic
     return (
         <div className="cartDropdown">
             <div className="cartItems">
