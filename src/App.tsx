@@ -33,12 +33,13 @@ const App = () => {
     const handleAddProduct = (product: ProductType) => {
         const newProductList = [...basket, product]
         setBasket(newProductList);
-        toast.success("added")
+        toast.success("New product added to cart")
     }
 
-    const handleRemoveProduct = () => {
-        console.log("remove")
-        toast.error("removed")
+    const handleRemoveProduct = (productName: string) => {
+        const filterProduct = basket.filter(({ name}) => name !== productName);
+        setBasket(filterProduct);
+        toast.error("Product is removed from cart")
     }
 
   return (
