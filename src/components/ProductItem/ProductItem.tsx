@@ -1,10 +1,11 @@
-import React, { memo } from "react";
+import React, {memo, useContext} from "react";
 
 import Button from "../Button/Button";
 import ProductImage from './vitl-vitamin-D.png';
 import { Product} from "../../types";
 
 import "./styles.scss";
+import VitlProductContext from "../../context";
 
 type Props = {
     item: Product;
@@ -12,7 +13,11 @@ type Props = {
 };
 
 const ProductItem = ({ item, handleAddProduct }: Props) => {
-    const { name, price} = item
+    const { name, price} = item;
+    const { basket } = useContext(VitlProductContext);
+
+    const isProductExist = basket.filter((item: any) => item.name === name).length > 0;
+
     return (
         <li className="cardsItem">
             <div className="card">
@@ -23,7 +28,12 @@ const ProductItem = ({ item, handleAddProduct }: Props) => {
                     <h2 className="productName">{name}</h2>
                     <p className="productPrice">£{price}</p>
                     <div className="productFooter">
-                        <Button onClick={() => handleAddProduct(item)}>Add to cart</Button>
+                        <Button
+                            onClick={() => handleAddProduct(item)}
+                            disabled={isProductExist}
+                        >
+                            Add to cart
+                        </Button>
                     </div>
                 </div>
             </div>
