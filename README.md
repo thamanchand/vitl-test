@@ -7,8 +7,9 @@ This is a test project
 
 2. Clone repo
 
-   git clone git@github.com:thamanchand/vitl-test.git
-   cd vitl-test
+      git clone git@github.com:thamanchand/vitl-test.git
+   
+      cd vitl-test
    
 3. Install npm dependencies:
 
