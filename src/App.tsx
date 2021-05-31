@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
 
 import Header from './components/Header/Header';
 import Product from "./components/Product/Product";
@@ -7,7 +8,7 @@ import { Product as ProductType} from './types';
 import VitlProductContext from './context';
 
 import './styles.scss';
-
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
     const [products, setProducts] = useState<ProductType[]>([]);
@@ -32,18 +33,21 @@ const App = () => {
     const handleAddProduct = (product: ProductType) => {
         const newProductList = [...basket, product]
         setBasket(newProductList);
+        toast.success("added")
     }
 
     const handleRemoveProduct = () => {
         console.log("remove")
+        toast.error("removed")
     }
 
   return (
     <>
+        <ToastContainer />
         <VitlProductContext.Provider
             value={{
-                addProduct: handleAddProduct,
-                removeProduct: handleRemoveProduct,
+                onProductAdd: handleAddProduct,
+                onProductRemove: handleRemoveProduct,
                 products,
                 isLoading,
                 configs,
