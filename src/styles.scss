@@ -1,7 +1,14 @@
 
+// better to move these variables into variables.scss
+// move all styles into assets folder src/assets/styles
+
 $vitl-primary: #ffd326;
 $vitl-black: #333333;
 
 h1 {
   color: $vitl-black;
+}
+
+.checkout {
+  padding: 10px;
 }
