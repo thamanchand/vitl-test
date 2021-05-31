@@ -24,16 +24,19 @@ const Cart = () => {
 
     return (
         <div className="cartDropdown">
-            {basket.length ? (
-                basket.map((cartItem: any, index: number) => (
-                    <CartItem key={index} item={cartItem} />
-                    ))
-                ) : (
-                    <span className="emptyMessage">Your cart is empty</span>
-            )}
+            <div>
+                {basket.length ? (
+                    basket.map((cartItem: any, index: number) => (
+                        <CartItem key={index} item={cartItem} />
+                        ))
+                    ) : (
+                        <span className="emptyMessage">Your cart is empty</span>
+                )}
+            </div>
             {basket.length > 0 && <Total basket={basket} /> }
             <Button
                 onClick={() => console.log("checkout dispatched")}
+                disabled={false}
             >
                 Go To Checkout
             </Button>
