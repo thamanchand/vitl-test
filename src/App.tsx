@@ -7,7 +7,7 @@ import Product from "./components/Product/Product";
 import { Product as ProductType} from './types';
 import VitlProductContext from './context';
 
-import './styles.scss';
+import './assets/styles/main.scss';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
