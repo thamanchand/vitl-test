@@ -3,8 +3,8 @@ import { createContext } from 'react';
 import { Product } from './types';
 
 export type VitlProductContextType = {
-    removeProduct: (product: Product) => void;
-    addProduct: (product: Product) => void;
+    onProductRemove: (product: Product) => void;
+    onProductAdd: (product: Product) => void;
     products: Product[];
     isLoading: boolean;
     configs: any;
