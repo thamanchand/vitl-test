@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 import Logo from '../Logo/Logo';
 import Cart from '../Cart/Cart';
@@ -12,11 +12,11 @@ const Header = () => {
     const handleCartToggle = () => {
         setToggleCart(!toggleCart);
     }
-    // Header logic
+
     return (
         <div className="header">
             <Logo />
-           <CartIcon onClick={handleCartToggle} />
+            <CartIcon onClick={handleCartToggle} />
             {toggleCart && <Cart />}
         </div>
     )
