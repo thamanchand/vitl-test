@@ -40,7 +40,7 @@
 
 .card {
   background-color: white;
-  border-radius: 0.25rem;
+  border: 1px solid #fef6dc;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -54,7 +54,7 @@
 .productName {
   color: #333;
   font-size: 22px;
-  line-height: 30px;
+  line-height: 2px;
   text-align: center;
 }
 
