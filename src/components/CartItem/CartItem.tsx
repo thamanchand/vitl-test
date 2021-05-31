@@ -1,7 +1,9 @@
-import React, { memo } from "react";
+import React, {memo, useContext} from "react";
+
+import VitlProductContext from "../../context";
+import ProductImage from "../ProductItem/vitl-vitamin-D.png";
 
 import "./styles.scss";
-import ProductImage from "../ProductItem/vitl-vitamin-D.png";
 
 type Props = {
     item: {
@@ -10,6 +12,8 @@ type Props = {
     }
 }
 const CartItem = ({ item: { name, price }}: Props) => {
+    const { onProductRemove } = useContext(VitlProductContext);
+
     return (
         <div className="cartItem">
             <div className="itemDetails">
@@ -18,7 +22,7 @@ const CartItem = ({ item: { name, price }}: Props) => {
                 </div>
                 <span className="name">{name}</span>
                 <span className="price">£{price}</span>
-                <span className="removeLabel">X</span>
+                <span className="removeLabel" onClick={() => onProductRemove(name)}>X</span>
             </div>
         </div>
     );
