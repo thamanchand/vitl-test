@@ -1,5 +1,4 @@
 .cartIcon {
-  background-image: url("./cartIcon.png");
   width: 45px;
   height: 45px;
   position: relative;
@@ -15,8 +14,15 @@
 
   .itemCount {
     position: absolute;
-    font-size: 10px;
-    font-weight: bold;
-    bottom: 12px;
+    bottom: 6px;
+    right: 5px;
+    background: #46bc8f;
+    border-radius: 100%;
+    font-size: 13px;
+    line-height: 12px;
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    text-align: center;
   }
 }
