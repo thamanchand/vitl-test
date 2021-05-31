@@ -5,12 +5,11 @@ This is a test project
    
 1. Install [Node.js and npm](https://nodejs.org/en/)
 
-2. Clone repo
+2. Install npm dependencies:
 
-      git clone git@github.com:thamanchand/vitl-test.git
-   
-      cd vitl-test
-   
+        git clone git@github.com:thamanchand/vitl-test.git
+        cd vitl-test
+         
 3. Install npm dependencies:
 
         yarn
