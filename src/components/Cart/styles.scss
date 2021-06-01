@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   padding: 21px;
-  border: 1px solid;
+  border: 1px solid #fef6dc;
   background-color: white;
   top: 78px;
   right: 18px;
@@ -13,8 +13,7 @@
   box-shadow: -7px 6px 15px -8px #fef6dc;
 
   .emptyMessage {
-    font-size: 18px;
-    margin: 50px auto;
+    text-align: center;
   }
 
   .cartItems {
