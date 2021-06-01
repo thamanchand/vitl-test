@@ -3,3 +3,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.loader {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  padding: 2em;
+  justify-content: center;
+  flex: 0 0 auto;
+}
