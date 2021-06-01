@@ -9,7 +9,7 @@
 
 .cardsItem {
   display: flex;
-  padding: 1rem;
+  padding: 15px;
 }
 
 .cardImage {
@@ -26,15 +26,15 @@
   background-color: #ffd326;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   .cardsItem {
     width: 50%;
   }
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 896px) {
   .cardsItem {
-    width: 30.3333%;
+    width: 22%;
   }
 }
 
@@ -47,7 +47,7 @@
 }
 
 .cardContent {
-  padding: 1rem;
+  padding: 15px;
   background: #fff;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .productPrice {
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: inherit;
   line-height: 30px;
