@@ -5,7 +5,7 @@ This is a test project
    
 1. Install [Node.js and npm](https://nodejs.org/en/)
 
-2. Install npm dependencies:
+2. Clone project:
 
         git clone git@github.com:thamanchand/vitl-test.git
         cd vitl-test
@@ -18,4 +18,4 @@ This is a test project
 
         yarn start
 
-1. Browse to [http://localhost:3000/](http://localhost:3000/)
+5. Browse to [http://localhost:3000/](http://localhost:3000/)
