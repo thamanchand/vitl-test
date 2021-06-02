@@ -3,7 +3,7 @@ import React, {useContext} from 'react';
 import Button from '../Button/Button';
 import CartItem from "../CartItem/CartItem";
 import VitlProductContext from '../../context';
-import { productTotal } from '../../utils';
+import { totalPrice } from '../../utils';
 
 import './styles.scss';
 
@@ -13,7 +13,7 @@ const Total = ({ basket }: any) => {
             <div className="totalDivider" />
             <div className="totalSum">
                 <span className="totalLabel">Total</span>
-                <span className="totalPrice">£{productTotal(basket)}</span>
+                <span className="totalPrice">£{totalPrice(basket)}</span>
             </div>
         </>
     )
