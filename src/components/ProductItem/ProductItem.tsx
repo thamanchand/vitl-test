@@ -12,7 +12,7 @@ import "./styles.scss";
 
 type Props = {
     item: Product;
-    handleAddProduct: (item: any) => void;
+    handleAddProduct: (item: Product) => void;
     uuid: number;
 };
 
@@ -20,7 +20,7 @@ const ProductItem = ({ item, handleAddProduct, uuid }: Props) => {
     const { name, price} = item;
     const { basket } = useContext(VitlProductContext);
 
-    const isProductExist = basket.filter((item: any) => item.name === name).length > 0;
+    const isProductExist = basket.filter((item: Product) => item.name === name).length > 0;
 
     return (
         <li className="cardsItem">
@@ -49,5 +49,5 @@ const ProductItem = ({ item, handleAddProduct, uuid }: Props) => {
     );
 };
 
-// Below memo stops the component from re rendering if we add same item again.
+// Stop re-rendering if same product is added.
 export default memo(ProductItem);
