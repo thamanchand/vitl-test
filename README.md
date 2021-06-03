@@ -19,3 +19,17 @@ This is a test project
         yarn start
 
 5. Browse to [http://localhost:3000/](http://localhost:3000/)
+
+# Running cypress test
+
+Make sure development server is running at http://localhost:3000.
+
+One new tab in terminal and start cypress server
+
+1. Starts cypress test
+
+        yarn run cypress open
+
+4. CLick test
+
+        ![Cypress test](cypress-test.png)
