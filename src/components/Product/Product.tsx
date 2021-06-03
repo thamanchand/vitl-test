@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import ProductItem from "../ProductItem/ProductItem";
 import VitlProductContext from '../../context';
-import Label from '../../components/Label';
+import Label from '../../components/Label/Label';
 
 import { Product as ProductType} from '../../types';
 import { findAllMatchedNutrients, checkNutrientsTUL } from '../../utils';

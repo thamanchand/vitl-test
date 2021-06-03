@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Product from "./components/Product/Product";
 import { Product as ProductType} from './types';
