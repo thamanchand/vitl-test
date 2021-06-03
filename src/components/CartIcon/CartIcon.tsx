@@ -15,7 +15,7 @@ const CartIcon: React.FC<Props> = ({ onClick }) => {
     return (
         <div className="cartIcon" onClick={onClick} data-cy="cartIcon">
             <ShoppingIcon className="shoppingIcon" />
-            <span className="itemCount">{basket.length}</span>
+            <span className="itemCount" data-cy="basketSum">{basket.length}</span>
         </div>
     )
 }

@@ -25,18 +25,19 @@ const ProductItem = ({ item, handleAddProduct, uuid }: Props) => {
 
     return (
         <li className="cardsItem" data-cy="cardItemList" >
-            <div className="card">
+            <div className="card" data-cy="card">
                 <div>
                     <img src={Vitamins[uuid]} className="cardImage" alt="product_image" />
                 </div>
-                <div className="cardContent">
+                <div className="cardContent" data-cy="cardContent">
                     <Label text={name} size="20px" isBold />
                     <Divider isSmall />
                     <Label text={`${'€'}${price}`} size="16px" isBold={false} />
-                    <div className="productFooter">
+                    <div className="productFooter" data-cy="productFooter">
                         <Button
                             onClick={() => handleAddProduct(item)}
                             disabled={isProductExist}
+                            data-cy="addToCartButton"
                         >
                             {isProductExist
                                 ? <span>Added to cart </span>
