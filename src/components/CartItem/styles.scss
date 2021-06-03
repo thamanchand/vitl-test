@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .cartItem {
   width: 100%;
   display: flex;
@@ -22,12 +24,12 @@
     }
     .removeLabel {
       padding: 5px;
-      color: #adaa9b;
+      color: $vitl-black;
       cursor: pointer;
       position: absolute;
       right: 20px;
       &:hover {
-        color: #333;
+        color: $vitl-black;
         font-weight: bold;
       }
     }

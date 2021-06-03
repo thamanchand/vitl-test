@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .cartIcon {
   width: 45px;
   height: 45px;
@@ -16,13 +18,13 @@
     position: absolute;
     bottom: 6px;
     right: 5px;
-    background: #46bc8f;
+    background: $vitl-checkout-icon;
     border-radius: 100%;
     font-size: 13px;
     line-height: 12px;
     width: 14px;
     height: 14px;
-    color: #fff;
+    color: $vitl-white;
     text-align: center;
   }
 }

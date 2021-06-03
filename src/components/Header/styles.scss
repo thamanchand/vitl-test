@@ -1,7 +1,9 @@
+@import '../../assets/styles/variables.scss';
+
 .header {
   padding: 15px;
-  background: #FFF;
+  background: $vitl-white;
   display: flex;
   align-items: center;
-  box-shadow: 1px 1px 1px #333;
+  box-shadow: 1px 1px 1px $vitl-black;
 }
