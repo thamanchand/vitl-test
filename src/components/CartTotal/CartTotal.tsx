@@ -10,7 +10,7 @@ const Total = ({ basket }: any) => {
             <Divider isSmall={false} />
             <div className="totalSum">
                 <span className="totalLabel">Total</span>
-                <span className="totalPrice">£{totalPrice(basket)}</span>
+                <span className="totalPrice">£{totalPrice(basket).toFixed(2)}</span>
             </div>
         </>
     )
