@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .buttonBase {
   min-width: 165px;
   width: auto;
@@ -7,8 +9,8 @@
   padding: 0 35px 0 35px;
   font-size: 15px;
   font-weight: normal;
-  background-color: #ffd326;
-  color: #333333;
+  background-color: $vitl-primary;
+  color: $vitl-black;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
@@ -18,7 +20,7 @@
   &:disabled {
     cursor: default;
     pointer-events: none;
-    background-color: #efefef;
+    background-color: $vitl-grey-one;
   }
 
   &:hover {

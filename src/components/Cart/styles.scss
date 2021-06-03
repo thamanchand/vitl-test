@@ -5,12 +5,12 @@
   display: flex;
   flex-direction: column;
   padding: 21px;
-  border: 1px solid #fef6dc;
+  border: 1px solid $vitl-accent-one;
   background-color: white;
   top: 78px;
   right: 18px;
   z-index: 5;
-  box-shadow: -7px 6px 15px -8px #fef6dc;
+  box-shadow: -7px 6px 15px -8px $vitl-accent-one;
 
   .emptyMessage {
     text-align: center;
