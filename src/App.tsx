@@ -56,7 +56,6 @@ const App = () => {
                 basket,
             }}
         >
-
             <Header />
             <Product />
         </VitlProductContext.Provider>
