@@ -13,7 +13,7 @@ const CartIcon: React.FC<Props> = ({ onClick }) => {
     const { basket } = useContext(VitlProductContext);
 
     return (
-        <div className="cartIcon" onClick={onClick} >
+        <div className="cartIcon" onClick={onClick} data-cy="cartIcon">
             <ShoppingIcon className="shoppingIcon" />
             <span className="itemCount">{basket.length}</span>
         </div>

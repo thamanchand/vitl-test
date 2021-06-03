@@ -26,7 +26,7 @@ const Cart = () => {
     const { basket } = useContext(VitlProductContext);
 
     return (
-        <div className="cartDropdown">
+        <div className="cartDropdown" data-cy="dropdownCart">
             <>
                 {basket.length ? (
                     basket.map((cartItem: any, index: number) => (

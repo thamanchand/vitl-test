@@ -24,7 +24,7 @@ const ProductItem = ({ item, handleAddProduct, uuid }: Props) => {
     const isProductExist = basket.filter((item: Product) => item.name === name).length > 0;
 
     return (
-        <li className="cardsItem">
+        <li className="cardsItem" data-cy="cardItemList" >
             <div className="card">
                 <div>
                     <img src={Vitamins[uuid]} className="cardImage" alt="product_image" />

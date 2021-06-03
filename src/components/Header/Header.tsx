@@ -15,7 +15,7 @@ const Header = () => {
     }
 
     return (
-        <div className="header">
+        <div className="header" data-cy="header">
             <Logo />
             <CartIcon onClick={handleCartToggle} />
             {isVisible &&

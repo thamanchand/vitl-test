@@ -7,7 +7,7 @@ import './styles.scss';
 const Header = () => {
     return (
         <div className="brand">
-            <img src={Logo} className="brand" alt="vitl logo" />
+            <img src={Logo} className="brand" alt="vitl logo" data-cy="vitlLogo"/>
         </div>
     )
 
