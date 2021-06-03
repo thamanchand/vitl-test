@@ -1,0 +1,10 @@
+@import '../../assets/styles/variables.scss';
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  background-color: $vitl-black;
+  color: $vitl-white;
+}
