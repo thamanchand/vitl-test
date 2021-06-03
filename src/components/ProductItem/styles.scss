@@ -17,15 +17,6 @@
   background-color: #fef6dc;
 }
 
-.divider {
-  display: inline-block;
-  width: 70px;
-  height: 2px;
-  margin-top: 30px;
-  margin-bottom: 25px;
-  background-color: #ffd326;
-}
-
 @media (min-width: 640px) {
   .cardsItem {
     width: 50%;
@@ -49,6 +40,10 @@
 .cardContent {
   padding: 15px;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .productName {
@@ -59,10 +54,8 @@
 }
 
 .productPrice {
-  margin-bottom: 20px;
   font-weight: 400;
   font-size: inherit;
-  line-height: 30px;
   color: #aeaa9a;
   text-align: center;
 }
