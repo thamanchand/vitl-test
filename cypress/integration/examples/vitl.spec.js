@@ -28,6 +28,11 @@ describe('Vitl cypress e2e test', () => {
     it('Add product to cart', () => {
         cy.get(':nth-child(1) > [data-cy=card] > [data-cy=cardContent] > [data-cy=productFooter] > .buttonBase').click();
     });
+
+    it('Make sure product is added to cart. Length should be 1', () => {
+        cy.get('[data-cy=basketSum]').should('have.length', 1)
+    });
+
 });
 
 
