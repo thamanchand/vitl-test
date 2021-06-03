@@ -3,12 +3,12 @@ import React from 'react';
 import './styles.scss';
 
 type Props = {
-    width: string;
+    isSmall: boolean;
 }
 
-const Divider: React.FC<Props> = ({ width }) => {
+const Divider: React.FC<Props> = ({ isSmall }) => {
     return (
-        <div className="divider" style={width ? {width: `${width}${'px'}`} : undefined } />
+        <div className="divider" style={isSmall ? { width: '50px' } : { width: '100%' }} />
     )
 };
 export default Divider;
