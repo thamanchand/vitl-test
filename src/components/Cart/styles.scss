@@ -12,7 +12,9 @@
   top: 78px;
   right: 18px;
   z-index: 5;
-  box-shadow: -7px 6px 15px -8px $vitl-accent-one;
+  box-shadow: -1px 4px 7px 0px rgba(207,140,140,0.74);
+  -webkit-box-shadow: -1px 4px 7px 0px rgba(207,140,140,0.74);
+  -moz-box-shadow: -1px 4px 7px 0px rgba(207,140,140,0.74);
 
   .emptyMessage {
     text-align: center;
