@@ -28,7 +28,11 @@
 @media (min-width: 896px) {
   .cardsItem {
     width: 22%;
+    .productName {
+      font-size: 18px;
+    }
   }
+
 }
 
 .card {
