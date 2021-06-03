@@ -17,6 +17,11 @@ export type TUL = {
     unit: string;
 };
 
+export type TolerableUpperLimits = {
+    id: string;
+    amount: number;
+    unit: string;
+};
 
 export type Configs = {
     tolerableUpperLimits:TUL[],
