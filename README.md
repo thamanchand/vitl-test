@@ -26,11 +26,12 @@ Make sure development server is running at http://localhost:3000.
 
 Open new tab in terminal and start cypress server
 
-1. Starts cypress test
+1. Starts cypress test server
 
         yarn run cypress open
 
-2. Click test
+2. Once browser is opened you will see `vitl.spec.js` under examples, Click `vitl.spec.js`
+   to run test
 
 ![Cypress test](cypress-test.png)
 
