@@ -51,8 +51,8 @@ export const checkNutrientsTUL = (product: ProductType, basket: Nutrient, result
             }
         }
     })
-    // If all nutrients requirements passes then return true
-    // add product to basket
+    // Requirements: The cumulation of protein nutrients shouldn't exceed TUL
+    // If product passes requirements then return true (add product to basket)
     if (productNutrientsStatus.every((status: boolean) => status)) {
         return true;
     } else {
