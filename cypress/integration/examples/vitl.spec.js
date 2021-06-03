@@ -13,4 +13,11 @@ describe('Vitl cypress e2e test', () => {
                 expect(resp.status).to.eq(200);
             });
     });
+
+    it('Find header, logo, cartIcon elements are present in page', () => {
+        cy.get('[data-cy=header]');
+        cy.get('[data-cy=vitlLogo]');
+        cy.get('[data-cy=cartIcon]');
+        cy.wait(2000); // wait for 2 seconds before testing
+    });
 });
