@@ -24,4 +24,11 @@ describe('Vitl cypress e2e test', () => {
     it('Test atleast one product is rendered', () => {
         cy.get('[data-cy=cards] > :nth-child(1)');
     });
+
+    it('Add product to cart', () => {
+        cy.get(':nth-child(1) > [data-cy=card] > [data-cy=cardContent] > [data-cy=productFooter] > .buttonBase').click();
+    });
 });
+
+
+
