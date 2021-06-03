@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 
-import { ReactComponent as ShoppingIcon } from './icon-cart.svg';
+import { ReactComponent as ShoppingIcon } from '../../assets/images/icon-cart.svg';
 import VitlProductContext from '../../context';
 
 import './styles.scss';

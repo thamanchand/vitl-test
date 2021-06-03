@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Logo from './vitl_logo.svg';
+import Logo from '../../assets/images/vitl_logo.svg';
 
 import './styles.scss';
 
