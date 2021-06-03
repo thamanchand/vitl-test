@@ -20,4 +20,8 @@ describe('Vitl cypress e2e test', () => {
         cy.get('[data-cy=cartIcon]');
         cy.wait(2000); // wait for 2 seconds before testing
     });
+
+    it('Test atleast one product is rendered', () => {
+        cy.get('[data-cy=cards] > :nth-child(1)');
+    });
 });
