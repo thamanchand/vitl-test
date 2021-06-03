@@ -4,10 +4,14 @@ import './styles.scss';
 
 type Props = {
     text: string;
+    size: string;
+    isBold: boolean;
 }
-const Label: React.FC<Props> = ({ text }) => {
+// TO-DO: Use classnames library to combine styles instead of inline style
+
+const Label: React.FC<Props> = ({ text, size, isBold }) => {
     return (
-        <div className="label">
+        <div className="label" style={{fontSize: size, fontWeight: isBold ? 'bold' : 'normal' }}>
             <p>{text}</p>
         </div>
     )
