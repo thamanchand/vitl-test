@@ -37,7 +37,7 @@ const Product = () => {
 
     return (
         <>
-            <Label text={"List of products"} size="26px" isBold={false} />
+            <Label text={"List of products"} size="26px" isBold />
             <ul className="cards">
                 {products.length
                     ? (
