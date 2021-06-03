@@ -3,6 +3,7 @@ import React, {memo, useContext} from "react";
 import Button from "../Button/Button";
 import VitlProductContext from "../../context";
 import Divider from '../Divider/Divider';
+import Label from "../Label/Label";
 
 import { Vitamins } from '../../constants';
 
@@ -29,9 +30,9 @@ const ProductItem = ({ item, handleAddProduct, uuid }: Props) => {
                     <img src={Vitamins[uuid]} className="cardImage" alt="product_image" />
                 </div>
                 <div className="cardContent">
-                    <h2 className="productName">{name}</h2>
+                    <Label text={name} size="20px" isBold />
                     <Divider isSmall />
-                    <p className="productPrice">£{price}</p>
+                    <Label text={`${'€'}${price}`} size="16px" isBold={false} />
                     <div className="productFooter">
                         <Button
                             onClick={() => handleAddProduct(item)}

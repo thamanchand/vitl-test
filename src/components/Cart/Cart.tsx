@@ -8,6 +8,7 @@ import Divider from '../Divider/Divider';
 import { totalPrice } from '../../utils';
 
 import './styles.scss';
+import Label from "../Label/Label";
 
 const Total = ({ basket }: any) => {
     return (
@@ -32,7 +33,9 @@ const Cart = () => {
                         <CartItem key={index} item={cartItem} />
                         ))
                     ) : (
-                        <div className="emptyMessage">Your cart is empty</div>
+                        <div className="emptyMessage">
+                            <Label text={"Your cart is empty"} size="16px" isBold={false} />
+                        </div>
                 )}
             </>
             {basket.length > 0 && <Total basket={basket} /> }
