@@ -18,9 +18,10 @@ const Header = () => {
         <div className="header">
             <Logo />
             <CartIcon onClick={handleCartToggle} />
-            {isVisible && <div ref={ref}>
-                <Cart />
-            </div>
+            {isVisible &&
+                <div ref={ref}>
+                    <Cart />
+                </div>
             }
         </div>
     )
