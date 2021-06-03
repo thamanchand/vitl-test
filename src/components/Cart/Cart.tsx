@@ -1,26 +1,13 @@
 import React, {useContext} from 'react';
 
 import Button from '../Button/Button';
-import CartItem from "../CartItem/CartItem";
-import VitlProductContext from '../../context';
-import Divider from '../Divider/Divider';
-
-import { totalPrice } from '../../utils';
-
-import './styles.scss';
+import CartTotal from '../CartTotal/CartTotal';
+import CartItem from '../CartItem/CartItem';
 import Label from "../Label/Label";
 
-const Total = ({ basket }: any) => {
-    return (
-        <>
-            <Divider isSmall={false} />
-            <div className="totalSum">
-                <span className="totalLabel">Total</span>
-                <span className="totalPrice">£{totalPrice(basket)}</span>
-            </div>
-        </>
-    )
-};
+import VitlProductContext from '../../context';
+
+import './styles.scss';
 
 const Cart = () => {
     const { basket } = useContext(VitlProductContext);
@@ -38,7 +25,7 @@ const Cart = () => {
                         </div>
                 )}
             </>
-            {basket.length > 0 && <Total basket={basket} /> }
+            {basket.length > 0 && <CartTotal basket={basket} /> }
             {basket.length > 0 &&
                 <Button
                     onClick={() => alert("proceed to checkout")}
