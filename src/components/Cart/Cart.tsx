@@ -36,12 +36,14 @@ const Cart = () => {
                 )}
             </>
             {basket.length > 0 && <Total basket={basket} /> }
-            <Button
-                onClick={() => console.log("checkout dispatched")}
-                disabled={false}
-            >
-                Go To Checkout
-            </Button>
+            {basket.length > 0 &&
+                <Button
+                    onClick={() => alert("proceed to checkout")}
+                    disabled={false}
+                >
+                    Go To Checkout
+                </Button>
+            }
         </div>
     )
 
