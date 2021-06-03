@@ -14,22 +14,23 @@ const Product = () => {
     const onAddProduct = (product: ProductType) => {
 
         // If basket is empty add new product straight to cart
-       if (!basket.length) {
+        if (!basket.length) {
             onProductAdd(product);
-       }
-       else {
-           const result = findAllMatchedNutrients(basket, product);
-           // check if result first item is [null]
-           const [firstResult] = result;
-           if (firstResult === null) {
-               onProductAdd(product);
-           } else {
-               const isAddNewProduct = checkNutrientsTUL(product, basket, result, configs.tolerableUpperLimits)
-               if (isAddNewProduct) {
-                   onProductAdd(product);
-               }
-           }
-       }
+        }
+        else {
+            const result = findAllMatchedNutrients(basket, product);
+            // check if result first item is [null]. If yes add product to basket
+            const onlyOneMatchedNutrient = result.length === 1 && result[0] === null;
+
+            if (onlyOneMatchedNutrient) {
+                onProductAdd(product);
+            } else {
+                const isAddNewProduct = checkNutrientsTUL(product, basket, result, configs.tolerableUpperLimits)
+                if (isAddNewProduct) {
+                    onProductAdd(product);
+                }
+            }
+        }
     }
 
     if (isLoading) return <div className="loader">Loading...</div>;
