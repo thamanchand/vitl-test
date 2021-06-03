@@ -24,12 +24,15 @@ This is a test project
 
 Make sure development server is running at http://localhost:3000.
 
-One new tab in terminal and start cypress server
+Open new tab in terminal and start cypress server
 
 1. Starts cypress test
 
         yarn run cypress open
 
-4. CLick test
+2. Click test
 
-        ![Cypress test](cypress-test.png)
+![Cypress test](cypress-test.png)
+
+
+3. See test live in action
