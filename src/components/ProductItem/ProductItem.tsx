@@ -2,6 +2,7 @@ import React, {memo, useContext} from "react";
 
 import Button from "../Button/Button";
 import VitlProductContext from "../../context";
+import Divider from '../Divider/Divider';
 
 import { Vitamins } from '../../constants';
 
@@ -29,6 +30,7 @@ const ProductItem = ({ item, handleAddProduct, uuid }: Props) => {
                 </div>
                 <div className="cardContent">
                     <h2 className="productName">{name}</h2>
+                    <Divider isSmall />
                     <p className="productPrice">£{price}</p>
                     <div className="productFooter">
                         <Button
