@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+
 import { ReactComponent as ShoppingIcon } from './icon-cart.svg';
 import VitlProductContext from '../../context';
 
@@ -12,7 +13,7 @@ const CartIcon: React.FC<Props> = ({ onClick }) => {
     const { basket } = useContext(VitlProductContext);
 
     return (
-        <div className="cartIcon" onClick={onClick}>
+        <div className="cartIcon" onClick={onClick} >
             <ShoppingIcon className="shoppingIcon" />
             <span className="itemCount">{basket.length}</span>
         </div>

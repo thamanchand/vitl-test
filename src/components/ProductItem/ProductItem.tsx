@@ -2,10 +2,11 @@ import React, {memo, useContext} from "react";
 
 import Button from "../Button/Button";
 import ProductImage from './vitl-vitamin-D.png';
+import VitlProductContext from "../../context";
+
 import { Product} from "../../types";
 
 import "./styles.scss";
-import VitlProductContext from "../../context";
 
 type Props = {
     item: Product;

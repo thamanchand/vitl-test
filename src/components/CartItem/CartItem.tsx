@@ -1,7 +1,7 @@
 import React, {memo, useContext} from "react";
 
-import VitlProductContext from "../../context";
 import ProductImage from "../ProductItem/vitl-vitamin-D.png";
+import VitlProductContext from "../../context";
 
 import "./styles.scss";
 

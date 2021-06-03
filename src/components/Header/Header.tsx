@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import Logo from '../Logo/Logo';
 import Cart from '../Cart/Cart';
 import CartIcon from '../CartIcon/CartIcon';
+import Logo from '../Logo/Logo';
 
 import './styles.scss';
 

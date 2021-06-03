@@ -3,6 +3,7 @@ import React, {useContext} from 'react';
 import Button from '../Button/Button';
 import CartItem from "../CartItem/CartItem";
 import VitlProductContext from '../../context';
+
 import { totalPrice } from '../../utils';
 
 import './styles.scss';
