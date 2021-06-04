@@ -38,24 +38,21 @@ const Product = () => {
     return (
         <>
             <Label text={"List of products"} size="26px" isBold data-cy="productListHeader" />
-
             <div data-cy="product">
                 <ul className="cards" data-cy="cards">
-                    {products.length
-                        ? (
-                            products.map((cartItem: ProductType, index) => (
-                                <ProductItem
-                                    key={index}
-                                    item={cartItem}
-                                    handleAddProduct={onAddProduct}
-                                    uuid={index}
-                                    data-cy="carItem"
-                                />
-                                ))
-                            ) : (
-                                <span className="emptyMessage">No products</span>
-                        )
-                    }
+                    {products.length ? (
+                        products.map((cartItem: ProductType, index) => (
+                            <ProductItem
+                                key={index}
+                                item={cartItem}
+                                handleAddProduct={onAddProduct}
+                                uuid={index}
+                                data-cy="carItem"
+                            />
+                            ))
+                    ) : (
+                        <span className="emptyMessage">No products</span>
+                    )}
                 </ul>
             </div>
         </>
