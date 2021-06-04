@@ -20,9 +20,9 @@ const Product = () => {
         else {
             const result = findAllMatchedNutrients(basket, product);
             // check if result first item is [null]. If yes add product to basket
-            const onlyOneMatchedNutrient = result.length === 1 && result[0] === null;
+            const isNoMatchedNutrientsInBasket = result.length === 1 && result[0] === null;
 
-            if (onlyOneMatchedNutrient) {
+            if (isNoMatchedNutrientsInBasket) {
                 onProductAdd(product);
             } else {
                 const isAddNewProduct = checkNutrientsTUL(product, basket, result, configs.tolerableUpperLimits)
